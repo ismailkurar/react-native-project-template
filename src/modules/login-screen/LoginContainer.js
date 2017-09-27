@@ -11,8 +11,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => (
   bindActionCreators({
-    login,
-    getMockData
+    login
   }, dispatch)
 );
 
