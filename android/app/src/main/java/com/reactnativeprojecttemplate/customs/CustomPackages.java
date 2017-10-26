@@ -6,6 +6,7 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
 import com.reactnativeprojecttemplate.customs.customModules.CustomModule;
+import com.reactnativeprojecttemplate.customs.customUIComponents.IsoChartManager;
 import com.reactnativeprojecttemplate.customs.customUIComponents.MuiCalenderViewManager;
 
 import java.util.ArrayList;
@@ -23,7 +24,8 @@ public class CustomPackages implements ReactPackage {
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
-                new MuiCalenderViewManager()
+                new MuiCalenderViewManager(),
+                new IsoChartManager()
         );
     }
 

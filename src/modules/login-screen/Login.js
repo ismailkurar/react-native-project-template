@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import { Actions } from 'react-native-router-flux';
 
+import Chart from '../../customs/custom-ui-component/IsoChart'
+
 import {
   AppRegistry,
   StyleSheet,
@@ -61,6 +63,23 @@ class Login extends Component {
             <Text>Login</Text>
           </TouchableHighlight>
         </View>
+        <Chart
+          style={{width: 300, height: 300, backgroundColor: 'transparent' }}
+          centerText="İsmail Kurar"
+          centerTextColor="#fdb814"
+          centerTextSize={20}
+          drawCenterText={true}
+          drawHoleEnabled={true}
+          holeColor="transparent"
+          holeRadius={80}
+          usePercentValues={false}
+          highlightPerTapEnabled
+          rotationEnabled={false}
+          drawEntryLabels={false}
+          displayLegends={false}
+          drawValues={false}
+          data={[{data: 10, color: '#eb9c00'}, {data: 20, color: '#fdb814'}]}
+        />
       </View>
     )
   }
