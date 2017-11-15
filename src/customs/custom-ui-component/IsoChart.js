@@ -6,7 +6,7 @@ import {  requireNativeComponent, View } from 'react-native';
 const iface = {
   name: 'IsoChart',
   propTypes: {
-    /*centerText: PropTypes.string,
+    centerText: PropTypes.string,
     centerTextColor: PropTypes.string,
     centerTextSize: PropTypes.number,
     drawCenterText: PropTypes.bool,
@@ -22,7 +22,7 @@ const iface = {
     drawEntryLabels: PropTypes.bool,
     displayLegends: PropTypes.bool,
     drawValues: PropTypes.bool,
-    data: PropTypes.array,*/
+    data: PropTypes.array,
     ...View.propTypes // include the default view properties
   }
 };
