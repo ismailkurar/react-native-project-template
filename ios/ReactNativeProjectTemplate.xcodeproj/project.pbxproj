@@ -37,6 +37,10 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		CD04D2BF1FBC308300FC24BC /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD04D2BC1FBC292800FC24BC /* Charts.framework */; };
+		CD04D2C01FBC308300FC24BC /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD04D2BC1FBC292800FC24BC /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD04D2C81FBC382500FC24BC /* RCTIsoChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD04D2C71FBC382500FC24BC /* RCTIsoChartManager.m */; };
+		CD04D2CB1FBC3A9800FC24BC /* RCTIsoChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD04D2CA1FBC3A9800FC24BC /* RCTIsoChartView.m */; };
 		CD7A75CA1F838A42001BDD05 /* CustomModule.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7A75C91F838A42001BDD05 /* CustomModule.m */; };
 /* End PBXBuildFile section */
 
@@ -237,6 +241,27 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		CD04D2BB1FBC292800FC24BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD04D2B61FBC292800FC24BC /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		CD04D2BD1FBC292800FC24BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD04D2B61FBC292800FC24BC /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		CD04D2C11FBC308300FC24BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD04D2B61FBC292800FC24BC /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
 		CD7A75BC1F8388F8001BDD05 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -274,6 +299,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CD04D2C31FBC308400FC24BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD04D2C01FBC308300FC24BC /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -300,6 +339,11 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		CD04D2B61FBC292800FC24BC /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Desktop/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		CD04D2C61FBC377C00FC24BC /* RCTIsoChartManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTIsoChartManager.h; path = ReactNativeProjectTemplate/RCTIsoChartManager.h; sourceTree = "<group>"; };
+		CD04D2C71FBC382500FC24BC /* RCTIsoChartManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTIsoChartManager.m; path = ReactNativeProjectTemplate/RCTIsoChartManager.m; sourceTree = "<group>"; };
+		CD04D2C91FBC3A3B00FC24BC /* RCTIsoChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTIsoChartView.h; path = ReactNativeProjectTemplate/RCTIsoChartView.h; sourceTree = "<group>"; };
+		CD04D2CA1FBC3A9800FC24BC /* RCTIsoChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTIsoChartView.m; path = ReactNativeProjectTemplate/RCTIsoChartView.m; sourceTree = "<group>"; };
 		CD7A75C81F838A29001BDD05 /* CustomModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CustomModule.h; path = ReactNativeProjectTemplate/CustomModule.h; sourceTree = "<group>"; };
 		CD7A75C91F838A42001BDD05 /* CustomModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CustomModule.m; path = ReactNativeProjectTemplate/CustomModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -320,6 +364,7 @@
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
+				CD04D2BF1FBC308300FC24BC /* Charts.framework in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
@@ -447,6 +492,10 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				CD7A75C81F838A29001BDD05 /* CustomModule.h */,
 				CD7A75C91F838A42001BDD05 /* CustomModule.m */,
+				CD04D2C61FBC377C00FC24BC /* RCTIsoChartManager.h */,
+				CD04D2C71FBC382500FC24BC /* RCTIsoChartManager.m */,
+				CD04D2C91FBC3A3B00FC24BC /* RCTIsoChartView.h */,
+				CD04D2CA1FBC3A9800FC24BC /* RCTIsoChartView.m */,
 			);
 			name = ReactNativeProjectTemplate;
 			sourceTree = "<group>";
@@ -491,6 +540,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CD04D2B61FBC292800FC24BC /* Charts.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -549,6 +599,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CD04D2B71FBC292800FC24BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD04D2BC1FBC292800FC24BC /* Charts.framework */,
+				CD04D2BE1FBC292800FC24BC /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -578,10 +637,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				CD04D2C31FBC308400FC24BC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CD04D2C21FBC308300FC24BC /* PBXTargetDependency */,
 			);
 			name = ReactNativeProjectTemplate;
 			productName = "Hello World";
@@ -660,6 +721,10 @@
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = CD04D2B71FBC292800FC24BC /* Products */;
+					ProjectRef = CD04D2B61FBC292800FC24BC /* Charts.xcodeproj */;
+				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
@@ -902,6 +967,20 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		CD04D2BC1FBC292800FC24BC /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = CD04D2BB1FBC292800FC24BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD04D2BE1FBC292800FC24BC /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = CD04D2BD1FBC292800FC24BC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		CD7A75BD1F8388F8001BDD05 /* libthird-party.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1017,9 +1096,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD04D2C81FBC382500FC24BC /* RCTIsoChartManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				CD7A75CA1F838A42001BDD05 /* CustomModule.m in Sources */,
+				CD04D2CB1FBC3A9800FC24BC /* RCTIsoChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,6 +1133,11 @@
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* ReactNativeProjectTemplate-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+		CD04D2C21FBC308300FC24BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = CD04D2C11FBC308300FC24BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1108,6 +1194,7 @@
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1126,6 +1213,7 @@
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ReactNativeProjectTemplate/Info.plist;
