@@ -27,7 +27,9 @@
   pieChart.chartDescription.enabled = NO;
   [pieChart setExtraOffsetsWithLeft:5.f top:10.f right:5.f bottom:5.f];
   
-  pieChart.drawCenterTextEnabled = YES;
+  
+  //pieChart.drawCenterTextEnabled = YES;
+
   
   NSMutableParagraphStyle *paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
   paragraphStyle.lineBreakMode = NSLineBreakByTruncatingTail;
@@ -52,7 +54,8 @@
   pieChart.rotationAngle = 0.0;
   pieChart.rotationEnabled = YES;
   pieChart.highlightPerTapEnabled = YES;
-
+  
+  pieChart._legend.enabled = false;
   
   // SET DATA ///////
   double mult = 2;
@@ -104,6 +107,8 @@
   [data setValueTextColor:UIColor.whiteColor];
   
   
+  
+  
   pieChart.data = data;
   [pieChart highlightValues:nil];
   
@@ -117,6 +122,33 @@
   [self addSubview:pieChart];
 }
 
+// Chart Props
+
+-(void)setDrawCenterText:(BOOL)drawCenterText
+{
+  pieChart.drawCenterTextEnabled = drawCenterText;
+  [pieChart setNeedsDisplay];
+}
+
+-(void)setCenterText:(NSString *)centerText
+{
+  pieChart.centerText = centerText;
+}
+
+-(void)setUsePercentValues:(BOOL)usePercentValues
+{
+  pieChart.usePercentValuesEnabled = usePercentValues;
+}
+
+-(void)setHoleRadius:(double)holeRadius
+{
+  pieChart.holeRadiusPercent = holeRadius / 100;
+}
+
+-(void)setDisplayLegends:(BOOL)displayLegends
+{
+  pieChart.legend.enabled = displayLegends;
+}
 
 
 @end

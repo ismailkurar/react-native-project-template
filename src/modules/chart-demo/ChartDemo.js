@@ -11,7 +11,12 @@ class ChartDemo extends Component {
         {
           Platform.OS === 'ios' ?
             <Chart
-              style={{ width: 300, height: 300, backgroundColor: 'transparent' }}
+              style={{ width: '100%', height: '100%', backgroundColor: 'transparent' }}
+              drawCenterText={true}
+              centerText="İsmail Kurar"
+              usePercentValues={false}
+              holeRadius={80}
+              displayLegends={false}
             /> :
             <Chart
               style={{ width: 300, height: 300, backgroundColor: 'transparent' }}

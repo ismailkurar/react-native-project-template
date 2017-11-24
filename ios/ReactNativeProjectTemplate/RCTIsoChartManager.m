@@ -22,4 +22,10 @@ RCT_EXPORT_MODULE()
   return [[RCTIsoChartView alloc] init];
 }
 
+RCT_EXPORT_VIEW_PROPERTY(drawCenterText, BOOL);
+RCT_EXPORT_VIEW_PROPERTY(centerText, NSString);
+RCT_EXPORT_VIEW_PROPERTY(usePercentValues, BOOL);
+RCT_EXPORT_VIEW_PROPERTY(holeRadius, double);
+RCT_EXPORT_VIEW_PROPERTY(displayLegends, BOOL);
+
 @end

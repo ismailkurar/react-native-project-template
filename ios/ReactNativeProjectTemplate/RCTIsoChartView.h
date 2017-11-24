@@ -16,5 +16,12 @@
 #import <Charts/Charts.h>
 
 @interface RCTIsoChartView : RCTView
+
+@property (nonatomic, assign) BOOL drawCenterText;
+@property (nonatomic, assign) NSString *centerText;
+@property (nonatomic, assign) BOOL usePercentValues;
+@property (nonatomic, assign) double holeRadius;
+@property (nonatomic, assign) BOOL displayLegends;
+
 @end
 
